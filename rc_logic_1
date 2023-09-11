@@ -1,0 +1,55 @@
+
+
+
+
+if (!found)
+    
+    
+    
+dst_tmp <= dst_flt;
+if ((port_list[9] + `NODEW'b0) == port_list[9]) begin
+    if (dst_flt == port_list[9]) begin
+        port0   <=  port_list[9];
+        end else if (
+        
+        
+        
+
+
+
+
+
+reg     [`NODEW:0]      cntr_dn;
+reg     [`NODEW:0]      cntr_up;
+
+
+always @(posedge clk) begin
+    if( rst_ == `Enable_ ) begin 
+        cntr_dn     <=      `NODEW'b`NODE;
+        cntr_up     <=      `NODEW'b0;
+    else if( dst_flt == my_id ) begin
+        port0       <=      port_list[0];
+        end
+        else if( sltd == 1 )begin
+            if((( port_list[cntr_dn] + `NODEW'b0 ) == port_list[cntr_dn] ) && (cntr_dn >= `NODEW'b0 )) begin
+                port0       <=      port_list[cntr_dn];
+                end else begin
+                    cntr_dn             <=      cntr_dn - `NODE'b0001;
+                    end
+            end else begin
+                if(( port_list[cntr_up] + `NODEW'b0) == port_list[cntr_up] && (cntr_dn >= `NODEW'b`NODE )) begin
+                    port0       <=      port_list[cntr_up];
+                    end else begin
+                        cntr_up         <=      cntr_up + `NODE'b0001;
+                        end
+                end
+    end
+    
+    
+    
+    
+    
+    
+    
+    
+    
